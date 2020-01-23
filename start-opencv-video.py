@@ -12,7 +12,7 @@ camera.set(4,720)  #4=altura
 #tamanhos diferentes da camera vai ocorrer erro na gravacao!
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('nomeArquivo.avi',fourcc,30,(1280,720))
+out = cv2.VideoWriter('Videos/nomeArquivo.avi',fourcc,30,(1280,720))
 
 while(camera.isOpened()):
     ret,frame = camera.read()
